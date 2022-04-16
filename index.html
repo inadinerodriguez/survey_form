@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<main>
+    <div>
+    <h1 id="title">Penny's Tacos Survey Form</h1>
+    <p id="description">
+        Thank you for taking the time to complete this survey and let us know how your visit to Penny's Tacos was.
+    </p>
+    </div> 
+<body>
+    <form id="survey-form">
+        
+        <label for="name-label">Name</label> 
+        <input id="name-label" type="text" name="name-label" placeholder="enter your name" required>
+        
+        <label for="email-label">Email</label>
+        <input id="email-label" type="email" placeholder="enter your email" required>
+       
+        <label for="number-label">Phone Number</label>
+        <input id="number-label" type="tel" placeholder="enter your number">
+        
+        <label for="dropdown">Overall Value</label>
+        <select id="dropdown" name="dropdown" placeholder="Please choose one" required>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+        </select>
+       
+    
+      
+       <label for="message">Any comments or suggestions?</label>
+       <textarea name="message" rows="5" cols="30"></textarea>
+       
+     <button type="submit">Submit</button>
+
+
+    </form>
+
+
+</body>
+</main>
+</html>
