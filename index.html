@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Survey Form</title>
 </head>
 <main>
-    <div>
-    <h1 id="title">K Pasa's Tacos Survey Form</h1>
+  
+    <header class="header">
+    <h1 id="title">Penny's Dog Walking Survey Form</h1>
     <p id="description">
-        Thank you for taking the time to complete this survey and let us know how your visit to K Pasa's Tacos was.
-    </p>
-    </div> 
+        Thank you for taking the time to complete this survey and let us know how you like Penny's Dog Walking service.
+    </p> 
+    </header>
 <body>
+
     <form id="survey-form">
-        
+        <div class="form-section">
         <label for="name-label">Name</label> 
         <input id="name-label" type="text" name="name-label" placeholder="enter your name" required><br>
         
@@ -24,29 +27,49 @@
        
         <label for="number-label">Phone Number</label>
         <input id="number-label" type="tel" placeholder="enter your number"><br>
-        
-        <label for="dropdown">Overall Value</label>
+        </div>
+
+        <div class="form-section">
+        <label for="dropdown">How was the overall experience?</label>
         <select id="dropdown" name="dropdown" placeholder="Please choose one" required>
             <option value="excellent">Excellent</option>
             <option value="good">Good</option>
             <option value="fair">Fair</option>
             <option value="poor">Poor</option>
         </select>
-        <p>Would you recommend K Pasa's Tacos to a friend?</p>
-        <input id="definitely" type="radio" name="definitely" value="definitely" checked>
-        <label for="definitely">Definitely</label><br>
-        <input id="Maybe" type="radio" name="Maybe" value="Maybe">
-        <label for="Maybe">Maybe</label><br>
-        <input id="Not-sure" type="radio" name="Not-sure" value="Not-sure">
-        <label for="Not-sure">Not-sure</label><br>
-   
+        </div>
+        
 
-    
-      
+        <div class="form-section">
+        <p>Would you recommend Penny's Dog Walking to a friend?</p>
+        <input id="definitely" type="radio" name="recommend" value="definitely" checked>
+        <label for="definitely">Definitely</label><br>
+        <input id="Maybe" type="radio" name="recommend" value="Maybe">
+        <label for="Maybe">Maybe</label><br>
+        <input id="Not-sure" type="radio" name="recommend" value="Not-sure">
+        <label for="Not-sure">Not-sure</label><br>
+        </div>
+        
+        <div class="form-section">
+        <p>What else would you like to see added onto dog walking service?</p>
+        <input id="longer-walks" type="checkbox" name="longer-walks" value="longer-walks">
+        <label for="longer-walks">Longer Walks</label><br>
+        <input id="grooming" type="checkbox" name="grooming" value="grooming">
+        <label for="grooming">Grooming</label><br>
+        <input id="playing" type="checkbox" name="playing" value="playing">
+        <label for="playing">Playing</label><br>
+        <input id="pics" type="checkbox" name="pics" value="pics">
+        <label for="pics">Pictures Taken</label><br>
+        </div>
+       
+       <div class="form-section">
        <label for="message">Any comments or suggestions?</label>
        <textarea name="message" rows="5" cols="30"></textarea>
-       
-     <button type="submit">Submit</button>
+       </div>
+
+       <div class="form-section">
+       <button type="submit" id="submit" class="submit-button">Submit</button>
+       </div>
 
 
     </form>
