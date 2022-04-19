@@ -26,51 +26,58 @@
     <form id="survey-form" class="container">
         <div class="form-section">
         <label for="name-label">Name</label> 
-        <input id="name-label" type="text" name="name-label" placeholder="enter your name" required><br>
+        <input id="name-label" type="text" name="name-label" placeholder="enter your name" required>
         
         <label for="email-label">Email</label>
-        <input id="email-label" type="email" placeholder="enter your email" required><br>
+        <input id="email-label" type="email" placeholder="enter your email" required>
        
         <label for="number-label">Phone Number</label>
-        <input id="number-label" type="tel" placeholder="enter your number"><br>
+        <input id="number-label" type="tel" placeholder="enter your number">
         </div>
 
         <div class="form-section-value">
-        <label for="dropdown">How was the overall experience?</label>
+        <p>How was your overall experience?</p>
+        <label for="dropdown">
         <select id="dropdown" name="dropdown" placeholder="Please choose one" required>
             <option value="excellent">Excellent</option>
             <option value="good">Good</option>
             <option value="fair">Fair</option>
             <option value="poor">Poor</option>
-        </select>
+        </select></label>
         </div>
         
 
         <div class="form-section-radio">
         <p>Would you recommend Penny's Dog Walking to a friend?</p>
-        <input id="definitely" type="radio" name="recommend" value="definitely" checked>
-        <label for="definitely">Definitely</label><br>
-        <input id="Maybe" type="radio" name="recommend" value="Maybe">
-        <label for="Maybe">Maybe</label><br>
-        <input id="Not-sure" type="radio" name="recommend" value="Not-sure">
-        <label for="Not-sure">Not-sure</label><br>
+        <label for="definitely">
+            <input id="definitely" type="radio" name="recommend" value="definitely" checked>Definitely</label>
+        <label for="Maybe">
+            <input id="Maybe" type="radio" name="recommend" value="Maybe">Maybe</label>
+        <label for="Not-sure">
+            <input id="Not-sure" type="radio" name="recommend" value="Not-sure">
+            Not-sure</label>
         </div>
         
         <div class="form-section-checkbox">
         <p>What else would you like to see added onto dog walking service?</p>
-        <input id="longer-walks" type="checkbox" name="longer-walks" value="longer-walks">
-        <label for="longer-walks">Longer Walks</label><br>
+        <label for="longer-walks">
+        <input id="longer-walks" type="checkbox" name="longer-walks" value="longer-walks" > Longer Walks</label>
+        <label for="grooming">
         <input id="grooming" type="checkbox" name="grooming" value="grooming">
-        <label for="grooming">Grooming</label><br>
+        Grooming</label>
+        <label for="playing">
         <input id="playing" type="checkbox" name="playing" value="playing">
-        <label for="playing">Playing</label><br>
+        Playing</label>
+        <label for="pics">
         <input id="pics" type="checkbox" name="pics" value="pics">
-        <label for="pics">Pictures Taken</label><br>
+        Pictures Taken</label>
         </div>
        
        <div class="form-section-message">
-       <label for="message">Any comments or suggestions?</label>
+       <p>Any comments or suggestions?</p>
+       <label for="message">
        <textarea name="message" rows="5" cols="30"></textarea>
+       </label>
        </div>
 
        <div class="form-section-button">
