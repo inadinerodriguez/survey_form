@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');
 
+
 body {
-  width: 100%;
-  height: 100%;
   font-family: 'Merriweather', serif;
   font-family: 'Playfair Display', serif;
-
-  background-image: url(https://cdn.pixabay.com/photo/2018/08/12/18/42/dog-3601383_960_720.jpg);
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: 
+   url(https://cdn.pixabay.com/photo/2019/03/19/14/19/dog-4065834_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,7 +19,7 @@ body {
 
 h1 {
     font-size: 3rem;
-    color: whitesmoke;
+    color: #000;
     text-align: center;
  }
 
@@ -30,27 +33,63 @@ h1 {
  p {
   font-size: 1.125rem;
   text-align: center;
+  padding; 0.3rem;
 }
+
 
 label {
   display: flex;
   align-items: center;
   font-size: 1.125rem;
+  margin-bottom: 0.5rem;
 }
 
-input,
+input, button, select, textarea {
+  width: 100%;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* input,
 button,
 select,
 textarea {
+  width: 100%;
+  padding: 0.3rem;
+  box-sizing: border-box;
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+} */
+
+.message-area {
+  display: flex;
+  width: 100%;
+}
+form {
+  background: rgb(222, 168, 129, 0.7);
+  border-radius: 0.25rem;
+  padding: 3rem;
+  margin: 2rem; 
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 3rem;
+  }
+}
+
+#description {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #000;
 }
 
 .container {
+  display: block;
   width: 100%;
-  margin: 3.125rem auto 0 auto;
+  margin: 3.125rem auto 0 auto; 
 }
 
 @media (min-width: 576px) {
@@ -61,11 +100,46 @@ textarea {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 750px;
   }
 }
 
 .header {
-  padding: 0 0.625rem;
-  margin-bottom: 1.875rem;
+  padding: 4rem 2rem;
+}
+
+.radio,
+.checkbox {
+  margin: auto;
+  width: 50%;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+
+
+.submit-button {
+  display: block;
+  font-weight: 700;
+  border-radius: 300px;
+  margin: 1rem 1rem;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  padding:  1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #cf650e;
+  border-color: #cf650e; 
+}
+
+.btn-primary:hover {
+  background-color: #dca95b;
+  border-color: #dca95b;
+  border-width: 4px;
+}
+.buffer {
+  height: 10rem;
 }
